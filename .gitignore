@@ -1,0 +1,9 @@
+# Skompilowane pliki wykonywalne
+superkalkulator
+*.out
+*.exe
+*.o
+
+# Pliki systemowe i konfiguracyjne środowisk
+.DS_Store
+.vscode/

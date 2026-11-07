@@ -4,6 +4,7 @@
 #include <string>
 #include <complex> /*liczby zespolone*/
 #include <utility>
+#include <initializer_list>
 using namespace std;
 using C = complex<double>; /*alias, żebym nie musiała za każdym razem pisać "std :: complex<double>"*/
 
