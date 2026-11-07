@@ -28,8 +28,8 @@ Ze względu na nałożone ograniczenia, implementacja wymagała kilku niestandar
 * **Symulacja arytmetyki 128-bitowej (Zadanie 9):** Aby uniknąć przepełnienia (overflow) przy zliczaniu bitów w bardzo dużych liczbach, napisałam funkcję parsowania wejściowego ciągu znaków (`string`) i dzielenia go na dwie oddzielne 64-bitowe liczby całkowite (`high` i `low`).
 * **Optymalizacja matematyczna (Zadanie 8):** Zamiast liczyć sumę szeregu w pętli (co dałoby złożoność $O(n)$), wyprowadziłam algebraicznie wzór zwarty, co redukuje czas obliczeń do $O(1)$.
 * **Równania sześcienne:** Zastosowano `std::complex` i wzory Cardano do znajdowania pierwiastków w dziedzinie zespolonej.
-
+* **Optymalizacja pod automatyczną ewaluację:** Projekt był weryfikowany przez zautomatyzowany system sprawdzający z bardzo wyśrubowanymi limitami czasu wykonywania i alokacji pamięci. Wymusiło to najwyższą wydajność, stosowanie operacji w miejscu (in-place) bez tworzenia zbędnych kopii struktur oraz redukcję złożoności czasowej.
 ## Kompilacja i uruchomienie
 Kompilacja przy użyciu standardowego kompilatora (np. g++):
 ```bash
-g++ main.cpp -o superkalkulator
+g++ main.cpp -o superkalkulator -std=c++17
